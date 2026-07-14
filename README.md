@@ -18,21 +18,24 @@ An AI-powered web application that detects **Pneumonia from Chest X-ray images**
 ---
 
 ## 📷 Demo
+<img width="1632" height="1078" alt="image" src="https://github.com/user-attachments/assets/a7e60dce-ece9-4057-b7a9-9235662b4d63" />
 
 ### Home Page
-> *(Add screenshot here)*
+<img width="1661" height="1078" alt="image" src="https://github.com/user-attachments/assets/c75bae31-8a1b-4fb6-ac10-faa2fee630b8" />
 
 ### Prediction Result
-> *(Add screenshot here)*
+<img width="1350" height="587" alt="image" src="https://github.com/user-attachments/assets/fc289d6a-e1b0-47f3-9ae0-f49fc15ca7a0" />
 
 ### Grad-CAM Visualization
-> *(Add screenshot here)*
+<img width="1265" height="802" alt="image" src="https://github.com/user-attachments/assets/8986a3ba-b72a-4ab8-b942-453a44b15710" />
 
 ### AI Doctor Assistant
-> *(Add screenshot here)*
+<img width="1333" height="666" alt="image" src="https://github.com/user-attachments/assets/1e899d72-93bf-4734-9bd7-c9c548d1b71a" />
 
 ### Diagnostic Report
-> *(Add screenshot here)*
+<img width="707" height="1005" alt="image" src="https://github.com/user-attachments/assets/f0031711-c444-4b43-99f8-7590e906b4f2" />
+<img width="703" height="947" alt="image" src="https://github.com/user-attachments/assets/70965b4d-32c6-4b49-bb21-99fca5b6974e" />
+
 
 ---
 
