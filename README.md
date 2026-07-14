@@ -1,73 +1,319 @@
-# Welcome to your Lovable project
+# 🩺 Pneumonia Detection & Region-Based Analysis using Deep Learning
 
-## Project info
+An AI-powered web application that detects **Pneumonia from Chest X-ray images** using a custom **Convolutional Neural Network (CNN)**. The system provides not only disease prediction but also **Grad-CAM visual explanations**, an **AI Doctor Assistant**, and downloadable diagnostic reports, making the prediction more interpretable and user-friendly.
 
-**URL**: https://lovable.dev/projects/fbc46fe0-e64b-4823-a112-b48459232d74
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- 🩻 Upload Chest X-ray Images
+- 🤖 Pneumonia Detection using Custom CNN
+- 📊 Confidence Score & Risk Level Prediction
+- 🔥 Grad-CAM Heatmap for Explainable AI
+- 💬 AI Doctor Assistant (Powered by Gemini)
+- 📄 Downloadable Diagnostic Report (PDF)
+- ⚡ Responsive and Modern User Interface
+- 🔗 REST API-based Backend Integration
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fbc46fe0-e64b-4823-a112-b48459232d74) and start prompting.
+## 📷 Demo
 
-Changes made via Lovable will be committed automatically to this repo.
+### Home Page
+> *(Add screenshot here)*
 
-**Use your preferred IDE**
+### Prediction Result
+> *(Add screenshot here)*
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Grad-CAM Visualization
+> *(Add screenshot here)*
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### AI Doctor Assistant
+> *(Add screenshot here)*
 
-Follow these steps:
+### Diagnostic Report
+> *(Add screenshot here)*
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 🏗️ System Architecture
 
-# Step 3: Install the necessary dependencies.
-npm i
+```
+                User
+                  │
+                  ▼
+        React + TypeScript Frontend
+                  │
+          Upload Chest X-ray
+                  │
+                  ▼
+             Flask Backend
+                  │
+     Image Preprocessing (224×224)
+                  │
+                  ▼
+        Custom CNN (PyTorch Model)
+                  │
+      ┌───────────┴────────────┐
+      ▼                        ▼
+ Prediction             Grad-CAM Heatmap
+      │                        │
+      └───────────┬────────────┘
+                  ▼
+        AI Doctor Assistant
+                  │
+                  ▼
+      Diagnostic Report Generation
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+## Backend
+
+- Flask
+- Python
+
+## Deep Learning
+
+- PyTorch
+- Custom CNN
+- Grad-CAM
+
+## AI
+
+- Gemini API
+
+## Data Processing
+
+- NumPy
+- Pandas
+- Pillow (PIL)
+
+## Machine Learning Utilities
+
+- Scikit-learn
+
+## Visualization
+
+- Matplotlib
+
+---
+
+# 📂 Project Structure
+
+```
+project/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── app.py
+│   ├── model.py
+│   ├── routes.py
+│   └── requirements.txt
+│
+├── model/
+│   ├── cnn_model.pth
+│   └── gradcam.py
+│
+├── reports/
+│
+├── dataset/
+│
+└── README.md
+```
+
+---
+
+# 🧠 Model Architecture
+
+Custom Convolutional Neural Network
+
+- 4 Convolution Blocks
+- Batch Normalization
+- ReLU Activation
+- Max Pooling
+- Dropout (0.5)
+- Fully Connected Layer
+- Softmax Output
+
+Input Image Size
+
+```
+224 × 224
+```
+
+Classes
+
+- Normal
+- Pneumonia
+
+---
+
+# 📊 Dataset
+
+Chest X-ray Pneumonia Dataset
+
+| Split | Images |
+|--------|--------|
+| Training | 8198 |
+| Validation | 2342 |
+| Testing | 1172 |
+
+Total Images
+
+```
+11,712
+```
+
+---
+
+# 📈 Model Performance
+
+| Metric | Score |
+|---------|--------|
+| Accuracy | **95.22%** |
+| Precision | **91.14%** |
+| Recall | **91.14%** |
+| F1 Score | **91.14%** |
+
+---
+
+# 🔥 Explainable AI
+
+The project integrates **Grad-CAM** to highlight the infected regions of Chest X-ray images.
+
+Benefits:
+
+- Improves model interpretability
+- Builds trust among users
+- Helps understand prediction decisions
+- Highlights infected lung regions
+
+---
+
+# 🤖 AI Doctor Assistant
+
+The integrated AI assistant can:
+
+- Explain prediction results
+- Suggest precautions
+- Provide basic medical guidance
+- Answer pneumonia-related questions
+- Handle unrelated questions safely
+
+> **Note:** This assistant is for educational purposes only and does not replace professional medical advice.
+
+---
+
+# 📄 Report Generation
+
+The system automatically generates a diagnostic report containing:
+
+- Prediction Result
+- Confidence Score
+- Risk Level
+- AI Recommendations
+- Precautions
+- Grad-CAM Visualization
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/Pneumonia-Detection.git
+```
+
+```bash
+cd Pneumonia-Detection
+```
+
+---
+
+## Backend Setup
+
+```bash
+cd backend
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+python app.py
+```
+
+---
+
+## Frontend Setup
+
+```bash
+cd frontend
+```
+
+```bash
+npm install
+```
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 📌 Workflow
 
-**Use GitHub Codespaces**
+1. Upload Chest X-ray Image
+2. Backend preprocesses image
+3. CNN predicts disease
+4. Confidence Score calculated
+5. Grad-CAM heatmap generated
+6. AI Doctor Assistant provides explanation
+7. PDF report generated
+8. User downloads report
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+# 🎯 Future Improvements
 
-This project is built with:
+- Multi-disease Detection
+- Transfer Learning (ResNet, EfficientNet)
+- Mobile Application
+- Cloud Deployment
+- Electronic Health Record (EHR) Integration
+- Personalized Medical Recommendations
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+# 👨‍💻 Author
 
-Simply open [Lovable](https://lovable.dev/projects/fbc46fe0-e64b-4823-a112-b48459232d74) and click on Share -> Publish.
+**Rich Amrutiya**
 
-## Can I connect a custom domain to my Lovable project?
+M.Tech Computer Science  
+Indian Institute of Technology Madras
 
-Yes, you can!
+GitHub:
+https://github.com/RichAmrutiya
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+LinkedIn:
+*(Add your LinkedIn URL here)*
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+# ⭐ If you found this project useful, don't forget to star the repository!
